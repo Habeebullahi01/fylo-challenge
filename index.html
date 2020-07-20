@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <!-- BOOTSTRAP CSS -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"> -->
+    <!-- BOOTSTRAP JAVASCRIPT -->
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script> -->
+    <!-- GOOGLE FONTS -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="css\index.min.css" />
+    <title>Frontend Mentor | Fylo data storage component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="components col-sm-12 col-md-4">
+        <img class="logo" src="images/logo.svg" alt="logo" /><br />
+        <img class="image" src="images/icon-document.svg" alt="document" />
+        <img class="image" src="images/icon-folder.svg" alt="folder" />
+        <img class="image" src="images/icon-upload.svg" alt="upload" />
+      </div>
+
+      <div class="data col-sm-12 col-md-8">
+        <label for="balance">
+          <p>You’ve used <span class="bold">815 GB</span> of your storage</p>
+        </label>
+
+        <progress id="balance" max="1000" value="815"> </progress>
+        <br />
+        <div class="progress">
+          <span id="min">0 GB</span>
+          <span id="max">1000 GB</span>
+        </div>
+
+        <p class="pop"><span id="bal" class="bold">185</span> GB Left</p>
+      </div>
+    </main>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://www.frontendmentor.io/profile/Habeebullahi01"
+        >Habeebullahi</a
+      >.
+    </div>
+  </body>
+</html>
